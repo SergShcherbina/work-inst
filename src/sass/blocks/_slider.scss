@@ -18,9 +18,6 @@
     display: block;
     box-shadow: none !important;
 }
-/* img {
-    border-radius: 10px;
-} */
 .mini_img {
     height: 60px;
     margin: 2px 2px;
@@ -48,7 +45,7 @@
 /* При наведении на кнопки добавляем фон кнопок */
 .slider .prev:hover,
 .slider .next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .slider-dots {
     text-align: center;
