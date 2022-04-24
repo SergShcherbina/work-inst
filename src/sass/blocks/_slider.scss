@@ -1,0 +1,83 @@
+.slider__instabox {
+    margin-top: 60px;
+  }
+  /* Собственно сам слайдер */
+.slider{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    max-height: 600px;
+    max-width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: block;
+    box-shadow: none !important;
+}
+/* img {
+    border-radius: 10px;
+} */
+.mini_img {
+    height: 60px;
+    margin: 2px 2px;
+    border-radius: 5px
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.slider-dots {
+    text-align: center;
+}
+.active,
+.mini_img:hover {
+    opacity: 0.5;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+

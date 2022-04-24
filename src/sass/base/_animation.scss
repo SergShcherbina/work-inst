@@ -1,0 +1,25 @@
+@keyframes sale {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+       color: #fbff00;
+    }
+    to {
+        transform: scale(1);
+    }
+} 
+
+
+@keyframes col {
+    from {
+        color: #000;
+    }
+    50% {
+        color: rgb(160, 31, 31);
+    }
+    to {
+        color:#000 ;
+    }
+}
